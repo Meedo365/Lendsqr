@@ -1,12 +1,13 @@
 import React from "react";
-import { Icon } from '@iconify/react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from '../assets/logo.png';
 import Container from 'react-bootstrap/Container';
-import { Form, FormGroup, FormSelect } from "react-bootstrap";
+import { Form, FormGroup } from "react-bootstrap";
+import SidebarMobile from "./sideBarMobileView";
+import Avatar from "../assets/avatar.png";
 
 function NavBar() {
     return <>
@@ -45,35 +46,16 @@ function NavBar() {
                             </svg>
                         </Nav.Link>
 
+                        <section className="flex">
+                            <img src={Avatar} alt="" />
+                            <NavDropdown title="Adedeji" id="navbarScrollingDropdown" style={{ color: '#213f7d' }}>
+                                <NavDropdown.Item href="#action3">Details</NavDropdown.Item>
+                                <NavDropdown.Item href="#action3">Logout</NavDropdown.Item>
+                            </NavDropdown>
+                        </section>
 
-                        {/* <Nav.Link style={{ display: block }}>
-                            <Link to='/register'>
-                                <Icon icon="bxs:user-plus" width="22" height="22" />
-                                Register
-                            </Link>
-                        </Nav.Link> */}
-
-                        {/* <Nav.Link>
-                            <Link to='/' >
-                                Logout
-                            </Link>
-                        </Nav.Link> */}
-
-
-                        {/* <Nav.Link>
-                            <Link to="/create/listing">
-                                <button id="create-listing">
-                                    <Icon icon="bytesize:compose" width="16" height="16" style={{ marginRight: '6px' }} />
-                                    Create Listing
-                                </button>
-                            </Link>
-                        </Nav.Link> */}
-                        <NavDropdown title="Adedeji" id="navbarScrollingDropdown" style={{ color: '#213f7d' }}>
-                            <NavDropdown.Item href="#action3">Details</NavDropdown.Item>
-                            <NavDropdown.Item href="#action3">Logout</NavDropdown.Item>
-
-                        </NavDropdown>
                     </Nav>
+                    <SidebarMobile />
                 </Navbar.Collapse>
             </Container>
         </Navbar>

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import StoreContext from './context/store';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from './pages/login';
-import ViewAllUsers from './pages/dashbord';
+import DashBoard from './pages/dashbord';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Login />} />
-          <Route path='/users' element={<ViewAllUsers />} />
+          <Route path='/dashboard' element={<DashBoard />} />
         </Routes>
       </Router>
     </StoreContext>
