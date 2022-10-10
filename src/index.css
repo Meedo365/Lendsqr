@@ -1,0 +1,158 @@
+.flex {
+  display: flex;
+}
+
+#logo {
+  width: 150px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+#nav-logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.login-bg img {
+  width: 100%;
+}
+
+.login-form {
+  box-shadow: -20px 0px 20px -20px whitesmoke;
+  height: 100vh;
+}
+
+.login-form h3 {
+  color: #213f7d;
+  font-weight: 800;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.login-form p {
+  color: #949bae;
+  margin-bottom: 40px;
+}
+
+.login-form a {
+  color: #39cdcc;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.login-form button {
+  border: none;
+  background-color: #39cdcc;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: small;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.login-form input {
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.login-form input:focus,
+#navbarScroll form input:focus {
+  box-shadow: none;
+}
+
+#showPassword {
+  color: #39cdcc;
+  text-transform: uppercase;
+  font-size: small;
+  height: min-content;
+  width: fit-content;
+  margin-bottom: 0px;
+  font-weight: 600;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.login-form span {
+  border: 2px solid #d8dade;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbarScroll form input {
+  outline: none;
+  border: 1px solid #d8dade;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-right: none;
+  padding-left: 10px;
+  width: 300px;
+}
+
+#navbarScroll form svg {
+  background-color: #39cdcc;
+  width: 50px;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#navbarScrollingDropdown {
+  color: #213f7d;
+}
+
+#navbarScroll {
+  margin-left: 100px;
+}
+
+#navbarScroll form input::placeholder {
+  font-size: 12px;
+  color: silver;
+  font-weight: 450;
+}
+
+/* .navbar-light .navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+} */
+
+button .navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+  background-color: #213f7d;
+}
+
+@media(max-width:425px) {
+  #logo {
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .login-bg img {
+    display: none;
+  }
+
+  .login-form h3 {
+    margin-top: auto;
+  }
+
+  #navbarScroll form {
+    display: none;
+  }
+
+  #navbarScroll {
+    margin-left: 0px;
+  }
+
+  #navbarScroll {
+    margin-left: 0px;
+    box-shadow: none;
+  }
+
+}
