@@ -145,13 +145,15 @@ button .navbar-toggler:focus {
   height: 48px;
 }
 
-#sidebar-lg img {
+#sidebar-lg img,
+#sidebar-md img {
   width: 16px;
   height: 16px;
   margin-right: 15px;
 }
 
-#sidebar-lg p {
+#sidebar-lg p,
+#sidebar-md p {
   text-transform: capitalize;
   font-weight: 400;
   height: 16px;
@@ -160,7 +162,8 @@ button .navbar-toggler:focus {
   margin-right: 15px;
 }
 
-#sidebar-lg span {
+#sidebar-lg span,
+#sidebar-md span {
   cursor: pointer;
   padding-left: 20px;
 }
@@ -168,16 +171,19 @@ button .navbar-toggler:focus {
 /* #sidebar-lg {
 } */
 
-#sidebar-lg span:hover p {
+#sidebar-lg span:hover p,
+#sidebar-md span:hover {
   text-decoration: underline;
 }
 
-#sidebar-lg ul {
+#sidebar-lg ul,
+#sidebar-md ul {
   width: 100%;
   margin-top: 40px;
 }
 
-#sidebar-lg ul h6 {
+#sidebar-lg ul h6,
+#sidebar-md ul h6 {
   color: #545F7D;
   text-transform: uppercase;
   font-weight: 500;
@@ -189,7 +195,8 @@ button .navbar-toggler:focus {
   padding-left: 20px;
 }
 
-#sidebar-lg li {
+#sidebar-lg li,
+#sidebar-md li {
   list-style: none;
   margin-left: -30px;
   width: initial;
@@ -214,6 +221,33 @@ button .navbar-toggler:focus {
   font-weight: 500;
 }
 
+.user-container {
+  box-shadow: 0px -15px 20px -30px black;
+}
+
+.cardContainer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.cardContainer {
+  background-color: white;
+  color: #213f7d;
+  box-shadow: 20px 20px 10px -25px black;
+  height: 160px;
+}
+
+.cardContainer h3 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.cardContainer img {
+  padding: 10px 0px 10px 20px;
+}
 
 @media(max-width:425px) {
   #logo {
@@ -250,6 +284,8 @@ button .navbar-toggler:focus {
 
   #sidebar-md {
     display: block;
+    margin-top: 20px;
+    margin-left: -20px;
   }
 
   #sidebar-lg {
